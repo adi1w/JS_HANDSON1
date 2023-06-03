@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js handson 1</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!---DOM : DOCUMENT OBJECT MODEL -->
+
+    <div class="header">
+        <h1 class="heading">*JS HANDSON ON DOM*</h1>
+    </div>
+    <br>
+
+
+    <div class="questions">
+        <!---QUESTION1-->
+        <div class="Q1">
+            <h3> Q1. Write the code to access element which is having id as "text"? </h3>
+        </div>
+
+        <!---ANSWER1-->
+        <div class="ans">
+            <p>
+            <h2> A1. WELCOME TO PREPBYTES </h2>
+            </p>
+        </div>
+        <br>
+
+        <!-----QUESTION2-->
+        <div class="Q2">
+            <h3> Q2. Write the code to access element which is having tag as "h1" ? </h3>
+        </div>
+
+        <!----ANSWER2-->
+        <div class="ans">
+            <h2>A2. WELCOME TO WEB DEVELOPMENT COURSE "PREPBYTES"</h2>
+        </div>
+        <br>
+
+
+
+        <!--QUESTION3--->
+        <div class="Q3">
+            <h3> Q3. Write the code to access element which is having class as "box" ? </h3>
+        </div>
+
+        <!----ANSWER3-->
+        <div class="ans">
+            <h2> A3. My Name is BOX.</h2>
+        </div>
+        <br>
+
+
+        <!---QUESTION4-->
+        <div class="Q4">
+            <h3> Q4. Change the heading from "Hello" to "Hello World" using DOM functions"? </h3>
+
+        </div>
+
+
+
+
+        <!----ANSWER4-->
+        <div class="ans">
+            <h3 id="q4">Hello</h3>
+        </div>
+        <div class="button" onclick="changeText()">
+            <button>Change Text</button>
+        </div>
+
+
+        <!---QUESTION5-->
+        <div class="Q5">
+            <h3> Q5. Create an HTML page having content as Hello world and a button named Replace Text. When user will
+                click on this button page content should be changed to "Welcome to Elevation academy"?</h3>
+        </div>
+
+        <!----ANSWER5-->
+        <div class="ans">
+            <h3 id="q5">HELLO</h3>
+        </div>
+        <div class="button"><button>Replace Text</button>
+        </div>
+
+
+
+        <!----Question6-->
+        <div class="Q6">
+            <h3> Q6. Add one style attribute and give text color as red and id attribute and give the id value as
+                "heading"
+                in the above given h1 tag using DOM functions"? </h3>
+            <br>
+
+            <!---ANSWER6-->
+            <h1 class="heading">Style.Red</h1>
+
+            <br>
+            <hr>
+            <br>
+
+            <!------Question7-->
+            <div class="Q7">
+                <h3>Q7. Create three cards on HTML page and arrange them using flex property in row or horizontal
+                    direction and also create button at the bottom named "Change Flex direction".
+                    When user clicks on this button, the cards arrangement should be changed to vertical direction?
+                </h3>
+            </div>
+
+
+            <!----ANSWER7-->
+            <div class="ans">
+                <div class="flex">
+                    <div class="flexbox">CONT1</div>
+                    <div class="flexbox">CONT2</div>
+                    <div class="flexbox">CONT3</div>
+                </div>
+            </div>
+            
+                <button onclick="changeDirection()"> Change direction</button>
+            
+
+        </div>
+        
+        </div>
+
+        <!----Question8-->
+        <div class="Q8">
+            <h3> Q8.What is the difference between window vs document?</h3>
+        </div>
+
+
+
+        <!---ANSWER8-->
+        <div class="ans">
+            <div class="parent">
+                <div class="content1">
+                    <h1>window</h1>
+                    <ol>
+                        <li>Represents the global window in a web browser</li>
+                        <li>servers as the top- level object in the browser's window hierarchy.</li>
+                        <li>contains properties and Methods related to thye browser window, such as
+                            dimensions,locations,history,navigation.</li>
+                        <li>Provides access to other global objects, such as document , navigators, and localstorage.
+                        </li>
+                        <li>Acts as the execution context for global Javascript Code.</li>
+                        <li>Handles events related to the window, such as load,resize,and scroll</li>
+                        <li>Can be used to open new browser windows or tabs using methods like open() and close().</li>
+                    </ol>
+                </div>
+                <div class="content2">
+                    <h1>Document</h1>
+                    <ol>
+                        <li>Represents the web page loaded within the browser window.</li>
+
+                        <li>Provides access to the elements and content within the web page.</li>
+                        <li>contains methods and properties to manipulate and interact with the document's structure,
+                            content and styling.</li>
+                        <li>Enables the selection of HTML elements using various methods like getElementById() ,
+                            querySelector() , or getElementsByTagName()</li>
+                        <li>Handles events that occur within the document , such as click,submit and keydown.</li>
+                        <li>Allows modification of element properties, such as text content, HTML markup , attributes
+                            and styles </li>
+                        <li>Provides methods to create new element , modify the document structure ,or dynamically load
+                            external resources.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+
+        <!----Question9-->
+        <div class="Q9">
+            <h3> Q9. Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every
+                second?</h3>
+        </div>
+        <!----ANSWER-->
+        <div class="ans">
+
+         <h4 class="clock">Start Clock</h4>
+
+        <h2 class="timer"></h2>
+        
+        </div>
+        <hr />
+        <br />
+
+        
+        <div class="button" onclick="flexChange()">
+            <a href="./index2.html">
+                <button>Let's Play Number Guesses Game</button></a>
+        </div>
+    </div>
+    
+
+    <script src=" ./script.js"></script>
+</body>
+
+</html>
